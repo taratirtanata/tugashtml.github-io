@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@tarr._ - 71231056 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Personal Web Page</h1>
+    </header>
+
+    <section id="foto">
+        <h2>About Me</h2>
+        <img src="tara.jpg" width="320px" height="560px" alt="Foto Saya">
+    </section>
+
+    <section id="tentang-saya">
+        <h2>Tara Tirtanata</h2>
+        <p>@tarr._</p>
+        <h3>Yogyakarta, Daerah Istimewa Yogyakarta, Indonesia</h3>
+        <h3>Duta Wacana Christian University</h3>
+    </section>
+
+    <section id="keterampilan">
+        <h2>Skillset</h2>
+        <ol>
+            <li>C</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+    </section>
+
+    <button
+        id="tombolGantiWarna">Ganti Warna Background
+    </button>
+
+    <footer>
+        <p>Thank you for visiting my personal web page.</p>
+        <p>@tarr._</p>
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+        function gantiWarnaRandom() {
+            const warnaList = ['red', 'blue', 'green', 'white'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna');
+        tombolGantiWarna.addEventListener('click', gantiWarnaRandom);
+    </script>
+
+</body>
+
+</html>
